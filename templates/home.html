@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Vending Machine</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}" type="text/css" media="all">
+    </head>
+    <body>
+        <div id="header">
+            <h1>Vending Machine</h1>
+        </div>
+        <div id="content">
+            <div id="item-select">
+                <h1 id="select-header">Daftar Minuman</h1>
+                <table>
+                    <tr>
+                        <td>
+                            <label class="radio-button">
+                                <input type="radio" name="item" value="1">
+                                <span>Pepsi</span>
+                            </label>
+                            <span>Rp 1</span>
+                        </td>
+                        <td>
+                            <label class="radio-button">
+                                <input type="radio" name="item" value="5">
+                                <span>Fanta</span>
+                            </label>
+                            <span>Rp 5</span>
+                        </td>
+                        <td>
+                            <label class="radio-button">
+                                <input type="radio" name="item" value="10" checked>
+                                <span>Cola</span>
+                            </label>
+                            <span>Rp 10</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="radio-button">
+                                <input type="radio" name="item" value="20">
+                                <span>Sprite</span>
+                            </label>
+                            <span>Rp 20</span>
+                        </td>
+                        <td>
+                            <label class="radio-button">
+                                <input type="radio" name="item" value="50">
+                                <span>Coffee</span>
+                            </label>
+                            <span>Rp 50</span>
+                        </td>
+                        <td>
+                            <label class="radio-button">
+                                <input type="radio" name="item" value="100">
+                                <span>Tea</span>
+                            </label>
+                            <span>Rp 100</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="input-money">
+                <h1>Masukan Uang</h1>
+                <select name="amount" id="money-selection">
+                    <option value="10">Rp 10</option>
+                    <option value="20">Rp 20</option>
+                    <option value="50">Rp 50</option>
+                    <option value="100">Rp 100</option>
+                </select>
+            </div>
+            <div id="changes-list">
+                <h1>Kembalian</h1>
+                <table id="changes-table">
+                    <tbody>
+                        <tr style="text-align: center;">
+                            <td>Uang Pas</td>
+                        </tr>
+                        <tr>
+                            <td>0 Lembar Pecahan Digunakan</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="{{ url_for('static', filename='home.js') }}"></script>
+    </body>
+</html>

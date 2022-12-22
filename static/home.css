@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+}
+
+#content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header {
+    background-color: lightblue;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+#header h1 {
+    color: white;
+    margin: 0;
+    height: fit-content;
+    width: fit-content;
+    align-self: center;
+}
+
+div#item-select, div#input-money, div#changes-list {
+    padding-top: 50px;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#item-select tr {
+    display: flex;
+    flex-direction: row;
+}
+
+div#item-select td {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#content>div>h1 {
+    margin-top: 0;
+}
+
+div#item-select #select-header, div#input-money>h1, div#changes-list>h1 {
+    color: blue;
+    width: fit-content;
+    height: fit-content;
+}
